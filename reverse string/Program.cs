@@ -8,26 +8,22 @@ namespace ReverseString // Note: actual namespace depends on the project name.
         {
             Console.WriteLine("Please write a word");
             string userChoice = Console.ReadLine();
-            string palindromeChecker = "";
+            string palindromeChecker = string.Empty;
 
-            for (int i = userChoice.Length-1; i >= 0 ; i--) {
-
+            for (int i = userChoice.Length - 1; i >= 0; i--)
+            {
                 palindromeChecker += userChoice[i];
-                
-            } 
+            }
             Console.WriteLine(palindromeChecker.ToLower());
-
-            if (palindromeChecker.ToLower() == userChoice.ToLower()){
-
+            if (palindromeChecker.ToLower() == userChoice.ToLower())
+            {
                 Console.WriteLine("Congratulations the word is a palindrome!");
-
-
             }
             else
             {
                 Console.WriteLine("the word is not a palindrome!");
             }
-
         }
+
     }
 }
