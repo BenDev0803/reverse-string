@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection.Metadata;
 
 namespace ReverseString // Note: actual namespace depends on the project name.
 {
@@ -16,11 +15,11 @@ namespace ReverseString // Note: actual namespace depends on the project name.
                 palindromeChecker += userChoice[i];
                 
             } 
-            Console.WriteLine(palindromeChecker);
+            Console.WriteLine(palindromeChecker.ToLower());
 
-            if (palindromeChecker == userChoice){
+            if (palindromeChecker.ToLower() == userChoice.ToLower()){
 
-                Console.WriteLine("Congratulations the word is a ´palindrome!");
+                Console.WriteLine("Congratulations the word is a palindrome!");
 
 
             }
